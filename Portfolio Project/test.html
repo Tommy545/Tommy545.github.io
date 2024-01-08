@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .pages{
+            width: 200%;
+        }
+        .page{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pages">
+            <div class="page one">
+                <h1>Page 1</h1>
+                <div><button onclick="slide('next')">Next</button></div>
+            </div>
+            <div class="page two">
+                <h1>Page 2</h1>
+                <div><button onclick="slide('prev')">Prev</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

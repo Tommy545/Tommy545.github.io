@@ -1,0 +1,17 @@
+body{
+    background:url('Madara-Uchiha.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:99%;
+    width:99%;
+}   
+h1, p{
+    text-align: center;
+}
+
+
+
+.button{
+    text-align: center;
+}
