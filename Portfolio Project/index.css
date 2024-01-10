@@ -14,18 +14,20 @@
 .two{
     background-color: grey;
 }
-.h1{
+h1{
     text-align: center;
+    padding: 20px;
 }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5rem;
     padding: 20px;
-    gap: 20px;
-    justify-content: center;
-    align-content: center;
-  }
-  
+    width: 50%;
+    height: 50%;
+}
 .grid-item {
   grid-column:span 2;
   background-color: rgba(255, 255, 255, 0.8);
@@ -35,8 +37,18 @@
   text-align: center;
   box-sizing: border-box;
 }
-
 .custom {
  grid-column:span 3;
 }
-/*https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for-specific-row*/
+.four{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.five{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/*https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for-specific-row
+  https://www.w3schools.com/css/css3_transitions.asp
+  https://learncssgrid.com*/
