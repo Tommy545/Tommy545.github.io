@@ -11,11 +11,16 @@
     background-size: 100% 100%;
     height: 100% 100%;
     background-repeat: no-repeat;
+    /*filter: blur(100px);*/
 }
 .two{
-    background-color: grey;
+    background:url('pictures/spiderman_rain.gif');
+    /*background-color: grey;*/
     background-size: 100% 100%;
     height: 100% 100%;
+    background-repeat: no-repeat;
+    /*filter: blur(1px);*/
+    position: absolute;
 }
 h1{
     text-align: center;
@@ -24,6 +29,7 @@ h1{
 p{
     text-align: center;
     padding-top: 15px;
+    font-weight: bold;
 }
 .grid-container {
     display: grid;
@@ -59,12 +65,90 @@ p{
 }
 .img{
     max-width: 100%;
+    aspect-ratio: 3/2;
     border-radius: 50px;
-    object-fit: cover;
+    object-fit: contain;
 }
-button{
-    align-items: end;
+button {
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 30px;
+  transition: all .3s;
 }
+button:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+button:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+/*--------------------JAVA-PAGE--------------------*/
+.grid-container-J {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-J{
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-J{
+    font-size: 15px;
+    font-weight: normal;
+}
+.background-J{
+    background:url('pictures/city.gif');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/*--------------------HTML-CSS-PAGE--------------------*/
+/*--------------------JAVASCRIPT-PAGE--------------------*/
+/*--------------------MYSQL-PAGE--------------------*/
+/*--------------------PHP-PAGE--------------------*/
+
 /*
 https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for-specific-row
 https://www.w3schools.com/css/css3_transitions.asp
