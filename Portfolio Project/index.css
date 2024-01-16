@@ -107,6 +107,60 @@ button:active {
     grid-column:span 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: rgba(55, 46, 46, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-J{
+    font-size: 15px;
+    color: white;
+}
+.background-J{
+    background:url('pictures/Java_background.png');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-J{
+    justify-content: center;
+    max-width: 80%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/*--------------------HTML-CSS-PAGE--------------------*/
+.grid-container-H {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    grid-column-gap: 10%;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-H {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 50px;
@@ -122,15 +176,18 @@ button:active {
     top: 1%;
     left: 2%;
 }
-.p-J{
+.p-H{
     font-size: 15px;
-    font-weight: normal;
 }
-.background-J{
-    background:url('pictures/city.gif');
+.background-H{
+    background:url('pictures/HTML+CSS_background.jpg');
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
+}
+.image-H{
+    justify-content: center;
+    max-width: 80%;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -142,12 +199,162 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-
-
-/*--------------------HTML-CSS-PAGE--------------------*/
 /*--------------------JAVASCRIPT-PAGE--------------------*/
+.grid-container-JS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-JS {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-JS{
+    font-size: 15px;
+}
+.background-JS{
+    background:url('pictures/Javascript_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-JS{
+    justify-content: center;
+    max-width: 80%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 /*--------------------MYSQL-PAGE--------------------*/
+.grid-container-JS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-JS {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-JS{
+    font-size: 15px;
+}
+.background-JS{
+    background:url('pictures/Javascript_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-JS{
+    justify-content: center;
+    max-width: 80%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 /*--------------------PHP-PAGE--------------------*/
+.grid-container-PHP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-PHP {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-PHP{
+    font-size: 15px;
+}
+.background-PHP{
+    background:url('pictures/PHP_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-PHP{
+    justify-content: center;
+    max-width: 80%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 
 /*
 https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for-specific-row
