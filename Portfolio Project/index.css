@@ -93,13 +93,50 @@ button:active {
   transform: translateY(2px);
   transition-duration: .35s;
 }
+
+/*--------------------Index-PAGE--------------------*/
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+p{
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.grid-container-I {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    padding: 50px 0px 50px 0px;
+
+}
+.grid-item-I {
+  grid-column:span 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 50px;
+    object-fit: contain;
+}
+
 /*--------------------JAVA-PAGE--------------------*/
+
 .grid-container-J {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 2fr);
     padding: 50px 0px 50px 0px;
-    width: 100%;
+    max-width: 100%;
     height: 70%;
     margin: auto;
 }
@@ -148,8 +185,8 @@ button:active {
     background: #555; 
 }
 
-
 /*--------------------HTML-CSS-PAGE--------------------*/
+
 .grid-container-H {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -199,7 +236,9 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
 /*--------------------JAVASCRIPT-PAGE--------------------*/
+
 .grid-container-JS {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,8 +290,10 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
 /*--------------------MYSQL-PAGE--------------------*/
-.grid-container-JS {
+
+.grid-container-SQL {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 2fr);
@@ -261,7 +302,7 @@ button:active {
     height: 70%;
     margin: auto;
 }
-.grid-item-JS {
+.grid-item-SQL {
     grid-column:span 2;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -280,16 +321,16 @@ button:active {
     top: 1%;
     left: 2%;
 }
-.p-JS{
+.p-SQL{
     font-size: 15px;
 }
-.background-JS{
-    background:url('pictures/Javascript_background.jpg');
+.background-SQL{
+    background:url('pictures/MYSQL_background.jpg');
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
 }
-.image-JS{
+.image-SQL{
     justify-content: center;
     max-width: 80%;
 }
@@ -303,7 +344,9 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
 /*--------------------PHP-PAGE--------------------*/
+
 .grid-container-PHP {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -361,4 +404,8 @@ https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for
 https://www.w3schools.com/css/css3_transitions.asp
 https://learncssgrid.com
 https://stackoverflow.com/questions/19848697/css-grid-where-one-column-shrinks-to-fit-content-the-other-fills-the-remaning-s
+https://www.geeksforgeeks.org/design-a-webpage-for-online-food-delivery-system-using-html-and-css/
+https://www.freecodecamp.org/news/javascript-projects-for-beginners/
+
+-----------------------------------Cointtoss game-----------------------------------
 */
