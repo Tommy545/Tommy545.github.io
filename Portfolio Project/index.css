@@ -22,14 +22,9 @@
     /*filter: blur(1px);*/
     position: absolute;
 }
-h1{
+.h1{
     text-align: center;
     padding: 20px;
-}
-p{
-    text-align: center;
-    padding-top: 15px;
-    font-weight: bold;
 }
 .grid-container {
     display: grid;
@@ -93,42 +88,24 @@ button:active {
   transform: translateY(2px);
   transition-duration: .35s;
 }
-
-/*--------------------Index-PAGE--------------------*/
-
-h1{
-    text-align: center;
-    padding: 20px;
+::-webkit-scrollbar {
+    width: 10px;
 }
-p{
-    text-align: center;
-    padding-top: 15px;
-    font-weight: bold;
-}
-.grid-container-I {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    padding: 50px 0px 50px 0px;
-
-}
-.grid-item-I {
-  grid-column:span 2;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 50px;
-  font-size: 30px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px;
-}
-.img{
-    max-width: 100%;
-    aspect-ratio: 3/2;
+::-webkit-scrollbar-thumb {
+    background: #888; 
     border-radius: 50px;
-    object-fit: contain;
 }
-
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*--------------------Index-PAGE--------------------*/
+.pos-I{
+    overflow: auto;
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 10%;
+}
 /*--------------------JAVA-PAGE--------------------*/
 
 .grid-container-J {
@@ -163,6 +140,9 @@ p{
 .p-J{
     font-size: 15px;
     color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .background-J{
     background:url('pictures/Java_background.png');
@@ -173,16 +153,6 @@ p{
 .image-J{
     justify-content: center;
     max-width: 80%;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
 
 /*--------------------HTML-CSS-PAGE--------------------*/
@@ -215,6 +185,9 @@ p{
 }
 .p-H{
     font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .background-H{
     background:url('pictures/HTML+CSS_background.jpg');
@@ -225,16 +198,6 @@ p{
 .image-H{
     justify-content: center;
     max-width: 80%;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
 
 /*--------------------JAVASCRIPT-PAGE--------------------*/
@@ -269,6 +232,9 @@ p{
 }
 .p-JS{
     font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .background-JS{
     background:url('pictures/Javascript_background.jpg');
@@ -279,16 +245,6 @@ p{
 .image-JS{
     justify-content: center;
     max-width: 80%;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
 
 /*--------------------MYSQL-PAGE--------------------*/
@@ -323,6 +279,9 @@ p{
 }
 .p-SQL{
     font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .background-SQL{
     background:url('pictures/MYSQL_background.jpg');
@@ -333,16 +292,11 @@ p{
 .image-SQL{
     justify-content: center;
     max-width: 80%;
+    cursor: pointer;
+    transition: 0.3;
 }
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+.image-SQL:hover{
+    opacity: 0.7;
 }
 
 /*--------------------PHP-PAGE--------------------*/
@@ -377,6 +331,9 @@ p{
 }
 .p-PHP{
     font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .background-PHP{
     background:url('pictures/PHP_background.jpg');
@@ -387,16 +344,6 @@ p{
 .image-PHP{
     justify-content: center;
     max-width: 80%;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
 
 /*
