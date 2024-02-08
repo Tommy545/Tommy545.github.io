@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+}
+.one{
+    background:url('pictures/backgrounds/Gisda.gif');
+    /*background-color: rgb(90, 90, 90);*/
+    background-size: 100% 100%;
+    height: 100% 100%;
+    background-repeat: no-repeat;
+    /*filter: blur(100px);*/
+}
+.two{
+    background:url('pictures/backgrounds/gsdggs.gif');
+    /*background-color: grey;*/
+    background-size: 100% 100%;
+    height: 100% 100%;
+    background-repeat: no-repeat;
+    /*filter: blur(1px);*/
+    position: absolute;
+}
+.h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.pos-I{
+    background-color: rgba(70, 94, 114, 0.726);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.pos-I{
+    font-weight: bold;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 5rem;
+    padding: 50px 0px 50px 0px;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item {
+  grid-column:span 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.custom {
+    grid-column:span 3;
+}
+.four{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.five{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 50px;
+    object-fit: contain;
+}
+.center-con {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+.round {
+    rotate: 90deg;
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#cta{
+    width:100%; cursor: pointer; position: absolute;
+}
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:14.1px;}
+.segunda{margin-left: 8px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.d-button {
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 30px;
+  transition: all .3s;
+}
+button:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+button:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*--------------------Index-PAGE--------------------*/
+
+.pos-I{
+    overflow: auto;
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 10%;
+}
+
+/*--------------------JAVA-PAGE--------------------*/
+
+.grid-container-J {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    max-width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-J{
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(55, 46, 46, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.p-J{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.background-J{
+    background:url('pictures/Java_background.png');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-J{
+    justify-content: center;
+    max-width: 80%;
+}
+
+/*--------------------HTML-CSS-PAGE--------------------*/
+
+.grid-container-H {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    grid-column-gap: 10%;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-H {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.return{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.p-H{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.background-H{
+    background:url('pictures/HTML+CSS_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-H{
+    justify-content: center;
+    max-width: 80%;
+}
+
+/*--------------------JAVASCRIPT-PAGE--------------------*/
+
+.grid-container-JS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-JS {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.p-JS{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.background-JS{
+    background:url('pictures/Javascript_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-JS{
+    justify-content: center;
+    max-width: 80%;
+}
+
+/*--------------------MYSQL-PAGE--------------------*/
+
+.grid-container-SQL {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-SQL {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.p-SQL{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.background-SQL{
+    background:url('pictures/MYSQL_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-SQL{
+    justify-content: center;
+    max-width: 80%;
+    cursor: pointer;
+    transition: 0.3;
+}
+.image-SQL:hover{
+    opacity: 0.7;
+}
+
+/*--------------------PHP-PAGE--------------------*/
+
+.grid-container-PHP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+.grid-item-PHP {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.p-PHP{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.background-PHP{
+    background:url('pictures/PHP_background.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image-PHP{
+    justify-content: center;
+    max-width: 80%;
+}
+
+/*
+https://stackoverflow.com/questions/62140771/split-css-grid-2-columns-into-3-for-specific-row
+https://www.w3schools.com/css/css3_transitions.asp
+https://learncssgrid.com
+https://stackoverflow.com/questions/19848697/css-grid-where-one-column-shrinks-to-fit-content-the-other-fills-the-remaning-s
+https://www.geeksforgeeks.org/design-a-webpage-for-online-food-delivery-system-using-html-and-css/
+https://www.freecodecamp.org/news/javascript-projects-for-beginners/
+
+-----------------------------------Cointtoss game-----------------------------------
+*/
