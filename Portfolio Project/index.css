@@ -7,14 +7,15 @@
     height: 100vh;
 }
 .one{
-    background:url('pictures/Madara-Uchiha.gif');
+    background:url('pictures/backgrounds/Gisda.gif');
+    /*background-color: rgb(90, 90, 90);*/
     background-size: 100% 100%;
     height: 100% 100%;
     background-repeat: no-repeat;
     /*filter: blur(100px);*/
 }
 .two{
-    background:url('pictures/spiderman_rain.gif');
+    background:url('pictures/backgrounds/gsdggs.gif');
     /*background-color: grey;*/
     background-size: 100% 100%;
     height: 100% 100%;
@@ -23,8 +24,19 @@
     position: absolute;
 }
 .h1{
+    color: white;
     text-align: center;
     padding: 20px;
+}
+.pos-I{
+    background-color: rgba(70, 94, 114, 0.726);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.pos-I{
+    font-weight: bold;
 }
 .grid-container {
     display: grid;
@@ -64,7 +76,62 @@
     border-radius: 50px;
     object-fit: contain;
 }
-button {
+.center-con {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+.round {
+    rotate: 90deg;
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#cta{
+    width:100%; cursor: pointer; position: absolute;
+}
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:14.1px;}
+.segunda{margin-left: 8px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.d-button {
   background-color: #2f80ed;
   border-radius: 10px;
   border-style: none;
@@ -99,6 +166,7 @@ button:active {
     background: #555; 
 }
 /*--------------------Index-PAGE--------------------*/
+
 .pos-I{
     overflow: auto;
     position: absolute;
@@ -106,6 +174,7 @@ button:active {
     top: 25%;
     left: 10%;
 }
+
 /*--------------------JAVA-PAGE--------------------*/
 
 .grid-container-J {
@@ -131,11 +200,6 @@ button:active {
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
-}
-.return{
-    position: absolute;
-    top: 1%;
-    left: 2%;
 }
 .p-J{
     font-size: 15px;
@@ -225,11 +289,6 @@ button:active {
     overflow: hidden;
     overflow-y: scroll;
 }
-.return{
-    position: absolute;
-    top: 1%;
-    left: 2%;
-}
 .p-JS{
     font-size: 15px;
     text-align: center;
@@ -271,11 +330,6 @@ button:active {
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
-}
-.return{
-    position: absolute;
-    top: 1%;
-    left: 2%;
 }
 .p-SQL{
     font-size: 15px;
@@ -323,11 +377,6 @@ button:active {
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
-}
-.return{
-    position: absolute;
-    top: 1%;
-    left: 2%;
 }
 .p-PHP{
     font-size: 15px;
