@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Portfolio</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="container">
+            <div class="page one" id="back">
+                <div class="pos-I">
+                <p style="color: white; font-family: monospace; font-weight: bold;" class="p-I">T O M M Y</p>
+                <h1 class="h-I">Home Page</h1>
+                <br>
+                <h1 style="color: rgb(0, 128, 202);" class="h-I">About Me</h1>
+                <br><br>
+                <p class="p-I">Hello 👋, My name is tommy and ever since from a young age I've always been facinated by programs and computers overall, I was always questioning in my head how does this work, how did that turn on, how did this happen etc etc, I started using scratch after that and made some small stuff like making the scratch walk. soon after I tried out Python cause it was the language I was the most interested in. I also made small projects like birthday calculators etc.</p>
+                </div>
+                <div class="center-con">
+                    <div onclick="transition()" class="round">
+                        <div id="cta">
+                            <span class="arrow primera next "></span>
+                            <span class="arrow segunda next "></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page two" id="next">
+                <h1 class="h1">Creations</h1>
+                <div class="center-con">
+                    <div onclick="btransition()" class="round" style="rotate: 270deg;">
+                        <div id="cta">
+                            <span class="arrow primera next "></span>
+                            <span class="arrow segunda next "></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="pictures/Java.png" class="img">
+                        <button class = "d-button" onclick="document.location='java.html'">Open</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/HTML+CSS.png" class="img">
+                        <button class = "d-button" onclick="document.location='html-css.html'">Open</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/JavaScript.png" class="img">
+                        <button class = "d-button" onclick="document.location='javascript.html'">Open</button>
+                    </div>
+                    <div class="grid-item custom four">
+                        <img src="pictures/MySQL.png" class="img">
+                        <button class = "d-button" onclick="document.location='mysql.html'">Open</button>
+                    </div>
+                    <div class="grid-item custom five">
+                        <img src="pictures/PHP.png" class="img">
+                        <button class = "d-button" onclick="document.location='php.html'">Open</button>
+                    </div>
+                  </div>
+                  <p>Learning next</p>
+            </div>
+    </div>
+</body>
+</html>
