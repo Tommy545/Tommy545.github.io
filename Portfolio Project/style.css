@@ -59,7 +59,7 @@
   box-sizing: border-box;
   padding: 10px;
 }
-/*.custom {
+.custom {
     grid-column:span 3;
 }
 .four{
@@ -69,7 +69,7 @@
 .five{
     grid-column-start: 4;
     grid-column-end: 6;
-}*/
+}
 .img{
     max-width: 90%;
     aspect-ratio: 3/2;
