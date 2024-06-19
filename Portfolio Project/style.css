@@ -59,7 +59,7 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.custom {
+/*.custom {
     grid-column:span 3;
 }
 .four{
@@ -69,9 +69,9 @@
 .five{
     grid-column-start: 4;
     grid-column-end: 6;
-}
+}*/
 .img{
-    max-width: 100%;
+    max-width: 90%;
     aspect-ratio: 3/2;
     border-radius: 50px;
     object-fit: contain;
@@ -176,13 +176,16 @@ button:active {
     left: 10%;
 }
 
+.ind_title{
+    font-size: 15px;
+}
 /*--------------------JAVA-PAGE--------------------*/
 
 .grid-container-J {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 2fr);
-    padding: 50px 0px 50px 0px;
+    padding: 45px 0px 45px 0px;
     max-width: 100%;
     height: 70%;
     margin: auto;
@@ -224,15 +227,17 @@ button:active {
 
 .grid-container-H {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 2fr);
     padding: 50px 0px 50px 0px;
-    grid-column-gap: 10%;
-    width: 80%;
+    max-width: 100%;
     height: 70%;
     margin: auto;
 }
 .grid-item-H {
+    grid-column:span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 50px;
@@ -386,7 +391,7 @@ button:active {
     font-weight: bold;
 }
 .background-PHP{
-    background:url('pictures/PHP_background.jpg');
+    background:url('pictures/foodbank.jpg');
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
