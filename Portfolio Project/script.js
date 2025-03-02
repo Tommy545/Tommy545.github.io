@@ -20,3 +20,4 @@ function resetimg(element) {
 
     element.style.transition = "transform 0.25 ease";
 }
+

@@ -59,17 +59,45 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.custom {
-    grid-column:span 3;
+
+@media only screen and (max-width: 1100px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 1rem;
+        padding: 20px 0px 20px 0px;
+        width: 70%;
+        height: 80%;
+        margin: auto;
+    }
+    .grid-item {
+        /*grid-column:span 2;*/
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
 }
-.four{
-    grid-column-start: 2;
-    grid-column-end: 4;
+@media only screen and (min-width: 1100px) {
+    .custom {
+        grid-column:span 3;
+    }
+    .four{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .five{
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
 }
-.five{
-    grid-column-start: 4;
-    grid-column-end: 6;
-}
+
+
 .img{
     max-width: 90%;
     aspect-ratio: 3/2;
@@ -178,9 +206,38 @@ button:active {
 
 .ind_title{
     font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 /*--------------------JAVA-PAGE--------------------*/
 
+@media only screen and (max-width: 1100px) {
+    .grid-container-J {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 2fr);
+        padding: 45px 0px 45px 0px;
+        max-width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-J{
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(55, 46, 46, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        color:white;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (min-width: 1100px) {
 .grid-container-J {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -205,6 +262,7 @@ button:active {
     overflow: hidden;
     overflow-y: scroll;
 }
+}
 .p-J{
     font-size: 15px;
     color: white;
@@ -225,6 +283,33 @@ button:active {
 
 /*--------------------HTML-CSS-PAGE--------------------*/
 
+@media only screen and (max-width: 1100px) {
+    .grid-container-H {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 2fr);
+        padding: 45px 0px 45px 0px;
+        max-width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-H{
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(55, 46, 46, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        color:white;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (min-width: 1100px) {
 .grid-container-H {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -248,6 +333,8 @@ button:active {
     overflow: hidden;
     overflow-y: scroll;
 }
+}
+
 .return{
     position: absolute;
     top: 1%;
@@ -272,28 +359,55 @@ button:active {
 
 /*--------------------JAVASCRIPT-PAGE--------------------*/
 
-.grid-container-JS {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 2fr);
-    padding: 50px 0px 50px 0px;
-    width: 100%;
-    height: 70%;
-    margin: auto;
+@media only screen and (max-width: 1100px) {
+    .grid-container-JS {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-JS{
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
-.grid-item-JS {
-    grid-column:span 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 10px;
-    overflow: hidden;
-    overflow-y: scroll;
+@media only screen and (min-width: 1100px) {
+    .grid-container-JS {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-JS {
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
 .p-JS{
     font-size: 15px;
@@ -314,29 +428,57 @@ button:active {
 
 /*--------------------MYSQL-PAGE--------------------*/
 
-.grid-container-SQL {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 2fr);
-    padding: 50px 0px 50px 0px;
-    width: 100%;
-    height: 70%;
-    margin: auto;
+@media only screen and (max-width: 1100px) {
+    .grid-container-SQL {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-SQL {
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
-.grid-item-SQL {
-    grid-column:span 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 10px;
-    overflow: hidden;
-    overflow-y: scroll;
+@media only screen and (min-width: 1100px) {
+    .grid-container-SQL {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-SQL {
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
+
 .p-SQL{
     font-size: 15px;
     text-align: center;
@@ -361,29 +503,57 @@ button:active {
 
 /*--------------------PHP-PAGE--------------------*/
 
-.grid-container-PHP {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 2fr);
-    padding: 50px 0px 50px 0px;
-    width: 100%;
-    height: 70%;
-    margin: auto;
+@media only screen and (max-width: 1100px) {
+    .grid-container-PHP {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-PHP {
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
-.grid-item-PHP {
-    grid-column:span 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 10px;
-    overflow: hidden;
-    overflow-y: scroll;
+@media only screen and (min-width: 1100px) {
+    .grid-container-PHP {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+    .grid-item-PHP {
+        grid-column:span 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        font-size: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
 }
+
 .p-PHP{
     font-size: 15px;
     text-align: center;
