@@ -38,6 +38,15 @@
 .pos-I{
     font-weight: bold;
 }
+@media only screen and (max-width: 1100px) {
+    .pos-I{
+        background-color: rgba(70, 94, 114, 0.726);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px;        
+    }
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -71,6 +80,7 @@
         width: 70%;
         height: 80%;
         margin: auto;
+        overflow-y: scroll;
     }
     .grid-item {
         /*grid-column:span 2;*/
